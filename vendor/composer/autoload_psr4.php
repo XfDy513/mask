@@ -7,5 +7,4 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'think\\composer\\' => array($vendorDir . '/topthink/think-installer/src'),
-    'app\\' => array($baseDir . '/application'),
 );

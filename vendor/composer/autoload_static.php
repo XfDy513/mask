@@ -11,20 +11,12 @@ class ComposerStaticInit5a89aa36382c4cb079e713358edf4c3f
         array (
             'think\\composer\\' => 15,
         ),
-        'a' => 
-        array (
-            'app\\' => 4,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'think\\composer\\' => 
         array (
             0 => __DIR__ . '/..' . '/topthink/think-installer/src',
-        ),
-        'app\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/application',
         ),
     );
 
