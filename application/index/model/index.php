@@ -4,7 +4,7 @@ namespace app\index\model;
 
 use think\Model;
 
-class index extends Model
+class Index extends Model
 {
     //
 }

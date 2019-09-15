@@ -2,7 +2,7 @@
 <html class="x-admin-sm">
     <head>
         <meta charset="UTF-8">
-        <title>管理系统</title>
+        <title>后台登录</title>
         <meta name="renderer" content="webkit|ie-comp|ie-stand">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
@@ -26,7 +26,7 @@
         <!-- 顶部开始 -->
         <div class="container">
             <div class="logo">
-                <a href="/static/index.html">管理系统</a></div>
+                <a href="/static/index.html">X-admin v2.2</a></div>
             <div class="left_open">
                 <a><i title="展开左侧栏" class="iconfont">&#xe699;</i></a>
             </div>
@@ -66,8 +66,8 @@
                             <a href="/static/login.html">退出</a></dd>
                     </dl>
                 </li>
-               <!-- <li class="layui-nav-item to-index">
-                    <a href="/">前台首页</a></li>-->
+                <li class="layui-nav-item to-index">
+                    <a href="/">前台首页</a></li>
             </ul>
         </div>
         <!-- 顶部结束 -->
@@ -78,8 +78,8 @@
                 <ul id="nav">
                     <li>
                         <a href="javascript:;">
-                            <i class="iconfont left-nav-li" lay-tips="员工管理">&#xe6b8;</i>
-                            <cite>员工管理</cite>
+                            <i class="iconfont left-nav-li" lay-tips="会员管理">&#xe6b8;</i>
+                            <cite>会员管理</cite>
                             <i class="iconfont nav_right">&#xe697;</i></a>
                         <ul class="sub-menu">
                             <!--<li>
@@ -88,105 +88,59 @@
                                     <cite>统计页面</cite></a>
                             </li>-->
                             <li>
-                                <a onclick="xadmin.add_tab('员工列表','member-list.html')">
+                                <a onclick="xadmin.add_tab('会员列表','member-list.html')">
                                     <i class="iconfont">&#xe6a7;</i>
-                                    <cite>员工列表</cite></a>
-                            </li>
-                            <li>
-                                <!--<a onclick="xadmin.add_tab('会员列表(动态表格)','member-list1.html',true)">
-                                    <i class="iconfont">&#xe6a7;</i>
-                                    <cite>会员列表(动态表格)</cite></a>-->
-                                <a onclick="xadmin.add_tab('员工角色管理','member-list1.html')">
-                                    <i class="iconfont">&#xe6a7;</i>
-                                    <cite>角色管理</cite></a>
+                                    <cite>会员列表</cite></a>
                             </li>
                             <!--<li>
+                                <a onclick="xadmin.add_tab('会员列表(动态表格)','member-list1.html',true)">
+                                    <i class="iconfont">&#xe6a7;</i>
+                                    <cite>会员列表(动态表格)</cite></a>
+                            </li>-->
+                            <li>
                                 <a onclick="xadmin.add_tab('会员删除','member-del.html')">
                                     <i class="iconfont">&#xe6a7;</i>
                                     <cite>会员删除</cite></a>
-                            </li>-->
-                            <!--<li>
+                            </li>
+                            <li>
                                 <a href="javascript:;">
                                     <i class="iconfont">&#xe70b;</i>
-                                    <cite>员工管理</cite>
+                                    <cite>会员管理</cite>
                                     <i class="iconfont nav_right">&#xe697;</i></a>
                                 <ul class="sub-menu">
-                                  &lt;!&ndash;  <li>
+                                    <li>
                                         <a onclick="xadmin.add_tab('会员删除','member-del.html')">
                                             <i class="iconfont">&#xe6a7;</i>
                                             <cite>会员删除</cite></a>
-                                    </li>&ndash;&gt;
+                                    </li>
                                     <li>
-                                        <a onclick="xadmin.add_tab('员工角色管理','member-list1.html')">
+                                        <a onclick="xadmin.add_tab('等级管理','member-list1.html')">
                                             <i class="iconfont">&#xe6a7;</i>
-                                            <cite>角色管理</cite></a>
+                                            <cite>等级管理</cite></a>
                                     </li>
                                 </ul>
-                            </li>-->
+                            </li>
                         </ul>
                     </li>
                     <li>
                         <a href="javascript:;">
                             <i class="iconfont left-nav-li" lay-tips="订单管理">&#xe723;</i>
-                            <cite>项目管理</cite>
+                            <cite>订单管理</cite>
                             <i class="iconfont nav_right">&#xe697;</i></a>
                         <ul class="sub-menu">
                             <li>
                                 <a onclick="xadmin.add_tab('订单列表','order-list.html')">
                                     <i class="iconfont">&#xe6a7;</i>
-                                    <cite>押金客户列表</cite></a>
+                                    <cite>订单列表</cite></a>
                             </li>
-                            <!--<li>
-                                <a onclick="xadmin.add_tab('订单列表1','order-list1.html')">
-                                    <i class="iconfont">&#xe6a7;</i>
-                                    <cite>押金客户1</cite></a>
-                            </li>-->
                             <li>
-                                <a onclick="xadmin.add_tab('订单列表','order-list.html')">
-                                    <i class="iconfont">&#xe6a7;</i>
-                                    <cite>缴费客户列表</cite></a>
-                            </li>
-                           <!-- <li>
                                 <a onclick="xadmin.add_tab('订单列表1','order-list1.html')">
                                     <i class="iconfont">&#xe6a7;</i>
-                                    <cite>缴费客户1</cite></a>
-                            </li>-->
+                                    <cite>订单列表1</cite></a>
+                            </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="javascript:;">
-                            <i class="iconfont left-nav-li" lay-tips="审批">&#xe723;</i>
-                            <cite>审批</cite>
-                            <i class="iconfont nav_right">&#xe697;</i></a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a onclick="xadmin.add_tab('审批','order-list.html')">
-                                    <i class="iconfont">&#xe6a7;</i>
-                                    <cite>请假审批</cite></a>
-                            </li>
-                            <!--<li>
-                                <a onclick="xadmin.add_tab('订单列表1','order-list1.html')">
-                                    <i class="iconfont">&#xe6a7;</i>
-                                    <cite>押金客户1</cite></a>
-                            </li>-->
-                            <li>
-                                <a onclick="xadmin.add_tab('采购审批','order-list.html')">
-                                    <i class="iconfont">&#xe6a7;</i>
-                                    <cite>采购审批</cite></a>
-                            </li>
-                            <li>
-                                <a onclick="xadmin.add_tab('出纳审批','order-list.html')">
-                                    <i class="iconfont">&#xe6a7;</i>
-                                    <cite>出纳审批</cite></a>
-                            </li>
-                             <li>
-                                 <a onclick="xadmin.add_tab('外出审批','order-list.html')">
-                                     <i class="iconfont">&#xe6a7;</i>
-                                     <cite>外出审批</cite></a>
-                             </li>
-                        </ul>
-                    </li>
-                    <!--<li>
                         <a href="javascript:;">
                             <i class="iconfont left-nav-li" lay-tips="分类管理">&#xe723;</i>
                             <cite>分类管理</cite>
@@ -198,8 +152,8 @@
                                     <cite>多级分类</cite></a>
                             </li>
                         </ul>
-                    </li>-->
-                    <!--<li>
+                    </li>
+                    <li>
                         <a href="javascript:;">
                             <i class="iconfont left-nav-li" lay-tips="城市联动">&#xe723;</i>
                             <cite>城市联动</cite>
@@ -211,7 +165,7 @@
                                     <cite>三级地区联动</cite></a>
                             </li>
                         </ul>
-                    </li>-->
+                    </li>
                     <li>
                         <a href="javascript:;">
                             <i class="iconfont left-nav-li" lay-tips="管理员管理">&#xe726;</i>
@@ -240,7 +194,7 @@
                             </li>
                         </ul>
                     </li>
-                    <!--<li>
+                    <li>
                         <a href="javascript:;">
                             <i class="iconfont left-nav-li" lay-tips="系统统计">&#xe6ce;</i>
                             <cite>系统统计</cite>
@@ -287,7 +241,7 @@
                                     <cite>仪表图</cite></a>
                             </li>
                         </ul>
-                    </li>-->
+                    </li>
                     <li>
                         <a href="javascript:;">
                             <i class="iconfont left-nav-li" lay-tips="图标字体">&#xe6b4;</i>

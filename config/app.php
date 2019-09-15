@@ -15,7 +15,7 @@
 
 return [
     // 应用名称
-    'app_name'               => '',
+    'app_name'               => 'app',
     // 应用地址
     'app_host'               => '',
     // 应用调试模式
@@ -94,14 +94,18 @@ return [
     'url_common_param'       => false,
     // URL参数方式 0 按名称成对解析 1 按顺序解析
     'url_param_type'         => 0,
+    // 是否开启路由
+    'url_route_on'           => true,
     // 是否开启路由延迟解析
     'url_lazy_route'         => false,
     // 是否强制使用路由
-    'url_route_must'         => false,
+    'url_route_must'         => ,
     // 合并路由规则
     'route_rule_merge'       => false,
     // 路由是否完全匹配
     'route_complete_match'   => false,
+    // 路由配置文件（支持配置多个）
+    'route_config_file'      => ['route'],
     // 使用注解路由
     'route_annotation'       => false,
     // 域名根，如thinkphp.cn
