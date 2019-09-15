@@ -1,4 +1,5 @@
 <?php
+
 // +----------------------------------------------------------------------
 // | ThinkPHP [ WE CAN DO IT JUST THINK ]
 // +----------------------------------------------------------------------
@@ -8,7 +9,6 @@
 // +----------------------------------------------------------------------
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
-
 // +----------------------------------------------------------------------
 // | 应用设置
 // +----------------------------------------------------------------------
@@ -97,17 +97,17 @@ return [
     // 是否开启路由
     'url_route_on'           => true,
     // 是否开启路由延迟解析
-    'url_lazy_route'         => false,
+    'url_lazy_route'         => true,
     // 是否强制使用路由
-    'url_route_must'         => ,
+    'url_route_must'         => true,
     // 合并路由规则
-    'route_rule_merge'       => false,
+    'route_rule_merge'       => true,
     // 路由是否完全匹配
-    'route_complete_match'   => false,
+    'route_complete_match'   => true,
     // 路由配置文件（支持配置多个）
     'route_config_file'      => ['route'],
     // 使用注解路由
-    'route_annotation'       => false,
+    'route_annotation'       => true,
     // 域名根，如thinkphp.cn
     'url_domain_root'        => '',
     // 是否自动转换URL中的控制器和操作名
@@ -127,7 +127,7 @@ return [
     // 全局请求缓存排除规则
     'request_cache_except'   => [],
     // 是否开启路由缓存
-    'route_check_cache'      => false,
+    'route_check_cache'      => true,
     // 路由缓存的Key自定义设置（闭包），默认为当前URL和请求类型的md5
     'route_check_cache_key'  => '',
     // 路由缓存类型及参数
