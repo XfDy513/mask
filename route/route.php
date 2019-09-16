@@ -25,6 +25,7 @@ Route::rule("/member","admin/Member/index");
 Route::rule("/authentication","admin/Authentication/index");
 //相册管理
 Route::rule("/photos","admin/Photos/index");
+
 //访问管理
 Route::rule("/visit","admin/Visit/index");
 //评论管理
@@ -43,7 +44,8 @@ Route::rule("/agent","admin/Agent/index");
 Route::rule("/accusation","admin/Accusation/index");
 //设置管理
 Route::rule("/set","admin/Set/index");
-
+//前台用户权限管理
+Route::rule("/authority","index/Authority/index");
 
 /*Route::group('admin', [
     ':id'   => 'Admin/index',

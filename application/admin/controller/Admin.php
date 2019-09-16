@@ -15,14 +15,7 @@ class Admin extends Controller
     public function index()
     {
         //
-
-        //return '后台系统 ';
-        //return 'abc'.$id;
-       //return $this->fetch('admin/index');
-
-        return '后台系统 ';
-        //return 'abc'.$id;
-       //return $this->fetch('admin/index')
+       return $this->fetch('admin/index');
 
     }
 
