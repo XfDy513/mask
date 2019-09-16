@@ -15,15 +15,15 @@ class Admin extends Controller
     public function index()
     {
         //
-<<<<<<< HEAD
+
         //return '后台系统 ';
         //return 'abc'.$id;
-       return $this->fetch('admin/index');
-=======
+       //return $this->fetch('admin/index');
+
         return '后台系统 ';
         //return 'abc'.$id;
        //return $this->fetch('admin/index')
->>>>>>> remotes/面具公园/master
+
     }
 
     /**
