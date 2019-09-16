@@ -14,11 +14,37 @@
     return 'hello,ThinkPHP5!';
 });*/
 
-//Route::get('hello/:name', 'index/hello');
 Route::get('', 'index/index');
-Route::get('say', 'index/index/say');
-Route::rule("admin","admin/Admin/index");
-Route::get("main","sample/test/index");
+//后台首页
+Route::rule("/admin","admin/Admin/index");
+//账号管理
+Route::rule("/account","admin/Account/index");
+//会员管理
+Route::rule("/member","admin/Member/index");
+//认证管理
+Route::rule("/authentication","admin/Authentication/index");
+//相册管理
+Route::rule("/photos","admin/Photos/index");
+//访问管理
+Route::rule("/visit","admin/Visit/index");
+//评论管理
+Route::rule("/discuss","admin/Discuss/index");
+//节目管理
+Route::rule("/program","admin/Program/index");
+//动态管理
+Route::rule("/trends","admin/Trends/index");
+//消费管理
+Route::rule("/consume","admin/Consume/index");
+//收益管理
+Route::rule("/income","admin/Income/index");
+//代理管理
+Route::rule("/agent","admin/Agent/index");
+//举报管理
+Route::rule("/accusation","admin/Accusation/index");
+//设置管理
+Route::rule("/set","admin/Set/index");
+
+
 /*Route::group('admin', [
     ':id'   => 'Admin/index',
     ':name' => 'Blog/read',
