@@ -5,7 +5,7 @@ namespace app\admin\controller;
 use think\Controller;
 use think\Request;
 
-class Admin extends Controller
+class Agent extends Controller
 {
     /**
      * 显示资源列表
@@ -15,9 +15,6 @@ class Admin extends Controller
     public function index()
     {
         //
-        //return '后台系统 ';
-        //return 'abc'.$id;
-       return $this->fetch('admin/index');
     }
 
     /**
