@@ -16,16 +16,15 @@
 
 Route::get('', 'index/index');
 //后台首页
-Route::rule("/admin","admin/Admin/index");
+Route::rule("admin","admin/Admin/index");
 //账号管理
-Route::rule("/account","admin/Account/index");
+Route::rule("account","admin/Account/index");
 //会员管理
-Route::rule("/member","admin/Member/index");
+Route::rule("member","admin/Member/index");
 //认证管理
 Route::rule("/authentication","admin/Authentication/index");
 //相册管理
 Route::rule("/photos","admin/Photos/index");
-
 //访问管理
 Route::rule("/visit","admin/Visit/index");
 //评论管理
@@ -47,10 +46,7 @@ Route::rule("/set","admin/Set/index");
 //前台用户权限管理
 Route::rule("/authority","index/Authority/index");
 
-/*Route::group('admin', [
-    ':id'   => 'Admin/index',
-    ':name' => 'Blog/read',
-])->ext('html')->pattern(['id' => '\d+']);*/
+
 // 路由到默认或者绑定模块
 
 //Route::rule('admin/:id','admin/Admin/index');
